@@ -5,7 +5,7 @@ var context = canvas.getContext('2d');
 var winwidth;
 var winheight;
 
-var scrollWeight = 0.5;
+var scrollWeight = 1;
 var scrollPosition = (window.scrollY*scrollWeight);
 
 //각 원의 반지름과 간격 계산
@@ -97,7 +97,7 @@ function adjustCircleSize(row, col, rows, cols, scrollPosition) {
     return Math.min(8, baseRadius + scrollPosition / 100); // 예시 크기 계산
   } else {
     // 'M'이 아닌 경우 크기를 줄임
-    return Math.max(4, baseRadius - scrollPosition / 100); // 예시 크기 계산
+    return Math.max(3, baseRadius - scrollPosition / 100); // 예시 크기 계산
   }
 }
 
