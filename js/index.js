@@ -94,7 +94,7 @@ function isPartOfM(row, col, rows, cols) {
 function adjustCircleSize(row, col, rows, cols, scrollPosition) {
   if (isPartOfM(row, col, rows, cols) === 1) {
     // 'M'의 일부인 경우 크기를 늘림
-    return Math.min(6, baseRadius + scrollPosition / 100); // 예시 크기 계산
+    return Math.min(8, baseRadius + scrollPosition / 100); // 예시 크기 계산
   } else {
     // 'M'이 아닌 경우 크기를 줄임
     return Math.max(4, baseRadius - scrollPosition / 100); // 예시 크기 계산
