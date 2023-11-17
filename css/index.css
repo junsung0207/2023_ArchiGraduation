@@ -1,11 +1,13 @@
 
 body{
   width:100%;
-  height:200%;
+  height:100%;
 }
 
 
 #myCanvas{
+  display:none;
+
    width : 100%;
    height : auto;
    background-color:whcolumn;
@@ -15,7 +17,6 @@ body{
 }
 
 .comingsoon{
-  display:none !important;
 
   width:100%;
   height:100%;
