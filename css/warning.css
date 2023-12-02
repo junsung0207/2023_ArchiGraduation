@@ -1,0 +1,39 @@
+body{
+    width:100%;
+    height:100%;
+    background-color:#29201f;
+}
+
+.warning-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "aGothic13",sans-serif;
+}
+
+.warning-text{
+    color:white;
+    font-size:30px;
+    line-height: 100px;
+    text-align: center;
+    
+}
+
+.warning-qr{
+    width:300px;
+    height:300px;
+    background-image: url("../im/qr.png");
+    background-position: center;
+    background-size:cover;
+}
+
+.warning-link{
+    color:white;
+    font-size:20px;
+    line-height: 100px;
+    font-family: "aGothic16",sans-serif;
+    cursor: pointer;
+}

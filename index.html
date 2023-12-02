@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/header.css">
   <link rel="icon" href="./im/favicon.ico" type="image/x-icon">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -24,13 +26,90 @@
 
 <body>
   <canvas id="myCanvas"></canvas>
-  <div class="comingsoon">
+  <!-- <div class="comingsoon">
     <h1>2023 한양대 건축공학부 학술전시회</h1>
     <h2>Moment into a Movement</h2>Made by 건축공학부 윤준성 임여진
     <h2>Site will be unveiled in December</h2>
+  </div> -->
+
+  <div class="header">
+    <a href="http://www.hyuare.com" class="title">HYU-ARE</a>
+    <div class="menubar"></div>
+  </div>
+  <div class="header-open">
+    <div class="header-menu-container">
+      <a href="http://www.hyuare.com"class="header-menu">MOMENT</a>
+      <a href="./html/aboutus.html" class="header-menu">ABOUTUS</a>
+      <a href="./html/archieve.html" class="header-menu">ARCHIEVE</a>
+      <a href="./html/event.html" class="header-menu">EVENT</a>
+    </div>
+    <div class="header-menu-closeButton"></div>
   </div>
 
+  <div class="momentText-container">
+    <span>Turning a Moment</span>&nbsp
+    <span>into a Movement</span>
+  </div>
+
+  <div class="momentText2-container">
+    <span>Moment + Movement</span><br>
+    <span>2023 한양대학교 건축공학부 학술전시 및 졸업논문전시회</span><br>
+    <span>Graduation Exibition - ACE Contest</span>
+  </div>
+
+  <div class="momentText3-container">
+    <span>서울 성동구 왕십리로 222</span><br>
+    <span>한양대학교 건축관 1층</span><br>
+    <span>2023.12.04 - 2023.12.10</span>
+  </div>
+
+  <div class="introduce-container">
+    <div class="introduce-us">
+      <p class="us-team">2023 건축공학부 학술제 기획단</p><br>
+      <p class="us-name" id="Us-Leader">사이트 제작 및 디자인</p>
+      <p class="us-name">윤준성</p><br>
+      <p class="us-name" id="Us-Leader">사이트 디자인 및 홍보팀 팀장</p>
+      <p class="us-name">임여진</p>
+      <br><br>
+      <p class="us-name" id="Us-Leader">총괄</p>
+      <p class="us-name">고윤서, 박지현</p>
+      <br><br>
+      <!-- <p class="us-team">기획팀</p> -->
+      <p class="us-name" id="Us-Leader">기획팀 팀장</p>
+      <p class="us-name">홍수현</p>
+      <br>
+      <p class="us-name" id="Us-Leader">기획팀</p>
+      <p class="us-name">김민준, 김용진, 김찬연, 장수환</p>
+      <p class="us-name">조태웅, 최기훈, 최동혁, 홍수현</p>
+      <br><br>
+      <p class="us-name" id="Us-Leader">운영팀 팀장</p>
+      <p class="us-name">문태선</p>
+      <br>
+      <p class="us-name" id="Us-Leader">운영팀</p>
+      <p class="us-name">김은수, 남원지, 백서영, 송승윤</p>
+      <p class="us-name">이다연, 전선일</p>
+      <br><br>
+      <p class="us-name" id="Us-Leader">예산팀</p>
+      <p class="us-name">이주한, 이태헌</p>
+      <br>
+    </div>
+    <div class="introduce-poster">
+      <div class="poster"></div>
+      <div class="banner"></div>
+    </div>
+
+    <div class="next-page-handler" onclick="location.href='./html/aboutus.html';">>> About Us</div>
+    <footer>
+      <p>2023 한양대학교 건축공학부 학술전시회</p><br>
+      <div>Copyright Yun Junseong All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  
+
   <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/header.js"></script>
+  <script type="text/javascript" src="./js/warning.js"></script>
 </body>
 
 </html>
