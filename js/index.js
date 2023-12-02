@@ -513,3 +513,15 @@ function invisible(){
 
 
 
+
+
+window.onload = function() {
+  // 로딩 화면 숨기기
+    document.getElementById('loadingScreen').style.display = 'none';
+
+  // 스크롤 다시 활성화
+  document.body.classList.remove('no-scroll');
+};
+
+// 페이지 로딩 시 스크롤 비활성화
+document.body.classList.add('no-scroll');
