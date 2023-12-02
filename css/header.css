@@ -44,6 +44,8 @@
     background-size:contain;
     background-repeat: no-repeat;
 
+    cursor: pointer;
+
   }
 
   .header-menu-button{
