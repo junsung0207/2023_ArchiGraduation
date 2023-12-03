@@ -1,3 +1,5 @@
+
+
 document.querySelector('.menubar').addEventListener('click', function() {
     var headerOpen = document.querySelector('.header-open');
     headerOpen.classList.add('visible'); // .header-open에 'visible' 클래스 추가

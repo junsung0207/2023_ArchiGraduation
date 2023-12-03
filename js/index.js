@@ -1,6 +1,22 @@
 var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 
+
+//--로딩 파트--
+window.onload = function() {
+  console.log("onload 완료");
+  // 로딩 화면 숨기기
+    document.getElementById('loadingScreen').style.display = 'none';
+
+  // 스크롤 다시 활성화
+  document.body.classList.remove('no-scroll');
+};
+
+// 페이지 로딩 시 스크롤 비활성화
+document.body.classList.add('no-scroll');
+//----
+
+
 //window의 width, height 값 저장 변수
 var winwidth;
 var winheight;
@@ -15,7 +31,7 @@ var padding;
 
 // 브라우저 창 크기에 맞춰 캔버스 크기 조정
 function resizeCanvas() {
-
+  
   var devicePixelRatio = window.devicePixelRatio || 1; //디바이스의 픽셀 비율 값(고해상도면 3,2)
 
   winwidth = window.innerWidth;
@@ -40,7 +56,7 @@ function resizeCanvas() {
   }
   console.log("baseRadius: "+baseRadius);
   padding = baseRadius; //원 사이의 간격
-
+  
   placeCircles(rows, columns, scrollPosition);
 
   console.log("canvasWidth, canvasHeight : ", canvas.width, canvas.height);
@@ -176,6 +192,7 @@ var T_pattern = [
 
 // 'M' 형태를 만드는 원들의 위치를 정의
 function isPartOfM(row, col, rows, cols) {
+  
   //1 : 커지는 부분, 0 : 작아지는 부분
   return M_pattern[row][col];
 }
@@ -200,6 +217,8 @@ function isPartOfT(row, col, rows, cols) {
 }
 
 function adjustCircleSize(row, col, rows, cols, scrollPosition) {
+  // console.log(row,col,rows,cols,scrollPosition);
+  // console.log(isPartOfM(row, col, rows, cols));
   if (isPartOfM(row, col, rows, cols) === 1) {
     // 줄어드는 크기
      return Math.max(3, baseRadius - scrollPosition / 100);
@@ -394,6 +413,7 @@ function placeCircles(rows, columns, scrollPosition) { //row가 가로 길쭉, c
     for (var col = 0; col < columns; col++) {
       var currentRadius = 3;
       if(scrollPosition>0){
+        // console.log('0이상진입');
         currentRadius = adjustCircleSize(row, col, rows, columns, scrollPosition);
       }
       //400~ : M소멸
@@ -517,13 +537,3 @@ function invisible(){
 
 
 
-window.onload = function() {
-  // 로딩 화면 숨기기
-    document.getElementById('loadingScreen').style.display = 'none';
-
-  // 스크롤 다시 활성화
-  document.body.classList.remove('no-scroll');
-};
-
-// 페이지 로딩 시 스크롤 비활성화
-document.body.classList.add('no-scroll');

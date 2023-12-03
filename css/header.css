@@ -84,9 +84,7 @@
     opacity:1;
   }
 
-  body.no-scroll{
-    overflow: hidden;
-  }
+  
 
 
   .header-menu-closeButton {
@@ -216,6 +214,8 @@ body::-webkit-scrollbar-track {
   cursor:none;
   text-align: center;
   line-height: 50px;
+
+  display:none;
 }
 
 body.no-scroll {
