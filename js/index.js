@@ -47,6 +47,9 @@ function resizeCanvas() {
   console.log("scrollpos : " + scrollPosition);
 }
 
+// 초기 캔버스 크기 설정
+resizeCanvas();
+
 //-- 알파벳 모양으로 그리는 부분(18x18) --
 var Pattern = [
 [1, 0, 1, 2, 3, 4, , 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
@@ -477,8 +480,7 @@ function momentText3Off(num){
 
 
 
-// 초기 캔버스 크기 설정
-resizeCanvas();
+
 
 
 var body = document.body;
