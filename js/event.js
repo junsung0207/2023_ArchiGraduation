@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var imageCards = document.querySelectorAll('.image-card');
-    var totalImages = 37; // 가지고 있는 총 이미지 수
+    var totalImages = 67; // 가지고 있는 총 이미지 수
     var availableImages = [];
 
     // 사용 가능한 이미지 번호들의 배열 생성
