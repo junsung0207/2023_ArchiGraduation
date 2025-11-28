@@ -2,7 +2,7 @@
   function gotoPage(){
     // location.href='https://hyuare.com/';
     localStorage.setItem('noRedirect', 'true');
-    location.href='../index.html';
+    location.href='./index.html';
   }
 
   // 데탑 접속시 다른 페이지로 리다이렉션
